@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+pyvenv.cfg
+env/
+env1/
+python/
+
+# Node / Frontend
+node_modules/
+.next/
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data artifacts
+backend/data/processed_embeddings.npy
+backend/data/embedding_meta.json
+
+
+# Evaluation
+evaluate_facts.py
+application_results.json
+ground_truth.json
+
+

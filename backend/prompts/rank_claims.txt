@@ -1,0 +1,19 @@
+You are ranking extracted claims for relevance.
+
+Question:
+{{QUESTION}}
+
+Claims:
+{{CLAIMS}}
+
+Instructions:
+- Rank the claims by how directly and strongly they answer the question.
+- Claims that explicitly compare outcomes or report performance differences rank higher.
+- Neutral, descriptive, or indirect claims rank lower.
+- Do NOT rewrite claims.
+- Do NOT add or remove claims.
+
+Output ONLY valid JSON in this format:
+{
+  "ranking": [1, 2, 3]
+}

@@ -1,0 +1,28 @@
+You are a research writing assistant.
+
+TASK:
+Rewrite the CLAIM as a short, clear, high-level summary of the EVIDENCE.
+
+IMPORTANT CONTEXT:
+- This summary must reflect ONLY what is stated in the evidence.
+- The evidence may discuss only one concept or condition.
+- Do NOT introduce comparisons unless they are EXPLICITLY stated in the evidence.
+
+RULES (STRICT):
+- Preserve the original meaning exactly
+- Do NOT introduce new information
+- Do NOT infer or assume missing comparators
+- Do NOT exaggerate or weaken conclusions
+- Use neutral, academic language
+- One sentence only
+- Do NOT copy the evidence verbatim
+
+OUTPUT FORMAT:
+Return ONLY valid JSON in the following format:
+
+{
+  "summary": "..."
+}
+
+EVIDENCE:
+{{EVIDENCE}}
