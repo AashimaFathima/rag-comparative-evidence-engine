@@ -79,7 +79,6 @@ RAG_PROJECT/
 │   │   └── rank_claims.txt
 │   │
 │   ├── scripts/
-│   │   ├── __pycache__/
 │   │   └── ingest_pdf.py
 │   │
 │   ├── data/
