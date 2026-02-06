@@ -109,10 +109,28 @@ The system has been evaluated using manually curated comparative questions and e
 - Evidence faithfulness  
 - Comparative correctness  
 
-Evaluation artifacts are intentionally not committed to keep the repository lightweight.  
-Metrics and methodology are described conceptually rather than inflated with synthetic numbers.
-
 ---
+
+## 🧠 Embedding Model & Performance Notes
+
+This system uses the **`intfloat/e5-small-v2`** sentence embedding model for retrieval.
+
+### Why this model was chosen
+- Designed specifically for **information retrieval**
+- Strong performance on semantic similarity tasks
+- Lightweight compared to larger embedding models
+
+### Performance Characteristics
+- Embeddings are computed **locally at runtime**
+- Processing time increases linearly with:
+  - Number of uploaded PDFs
+  - Number of extracted text chunks
+- Multi-document queries (2–3 PDFs) take longer due to:
+  - Re-embedding of additional chunks
+  - Increased retrieval and ranking comparisons
+
+### Design Tradeoff
+This project intentionally prioritizes **retrieval accuracy and evidence faithfulness** over raw speed.
 
 ## 🔒 Environment Variables
 
