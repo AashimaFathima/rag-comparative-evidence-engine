@@ -35,6 +35,8 @@ This system separates **retrieval, extraction, validation, and ranking** to ensu
 
 ## 🏗️ System Architecture
 
+```text
+
 User Question
 ↓
 Query Parser (LLM)
@@ -51,7 +53,12 @@ Claim Summarization (LLM)
 ↓
 Claim Ranking (LLM)
 
+```
+
 ## 📁 Project Structure
+
+
+```text
 
 RAG_PROJECT/
 │
@@ -77,7 +84,7 @@ RAG_PROJECT/
 │
 └── README.md
 
-
+```
 ---
 
 ## 🧪 Evaluation (Overview)
@@ -105,14 +112,18 @@ GROQ_API_KEY=your_api_key_here
 ## ▶️ Running Locally
 
 Backend 
+```text
 cd backend 
 pip install -r requirements.txt 
 python server.py
+```
 
 Frontend 
+```text
 cd frontend 
 npm install 
 npm run dev
+```
 
 ## 📜 License
 
