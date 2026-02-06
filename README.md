@@ -63,24 +63,39 @@ Claim Ranking (LLM)
 RAG_PROJECT/
 │
 ├── backend/
-│ ├── pipeline/
-│ │ ├── query_parser.py
-│ │ ├── retrieval.py
-│ │ ├── claim_extraction.py
-│ │ ├── claim_validation.py
-│ │ ├── claim_summarizer.py
-│ │ └── claim_ranker.py
-│ │
-│ ├── prompts/
-│ ├── scripts/
-│ ├── data/
-│ ├── server.py
-│ └── requirements.txt
+│   ├── pipeline/
+│   │   ├── query_parser.py
+│   │   ├── retrieval.py
+│   │   ├── claim_extraction.py
+│   │   ├── claim_validation.py
+│   │   ├── claim_summarizer.py
+│   │   └── claim_ranker.py
+│   │
+│   ├── prompts/
+│   │   ├── parse_query.txt
+│   │   ├── extract_claims.txt
+│   │   ├── validate_claim.txt
+│   │   ├── summarize_claim.txt
+│   │   └── rank_claims.txt
+│   │
+│   ├── scripts/
+│   │   ├── __pycache__/
+│   │   └── ingest_pdf.py
+│   │
+│   ├── data/
+│   │   ├── papers/
+│   │   ├── processed_chunks.json
+│   │   ├── processed_embeddings.npy
+│   │   └── embedding_meta.json
+│   │
+│   ├── server.py
+│   └── requirements.txt
 │
 ├── frontend/
-│ ├── app/
-│ ├── public/
-│ └── package.json
+│   ├── app/
+│   ├── public/
+│   ├── package.json
+│   └── package-lock.json
 │
 └── README.md
 
