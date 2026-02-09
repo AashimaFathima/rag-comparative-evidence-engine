@@ -118,19 +118,10 @@ This system uses the **`intfloat/e5-small-v2`** sentence embedding model for ret
 ### Why this model was chosen
 - Designed specifically for **information retrieval**
 - Strong performance on semantic similarity tasks
-- Lightweight compared to larger embedding models
-
-### Performance Characteristics
-- Embeddings are computed **locally at runtime**
-- Processing time increases linearly with:
-  - Number of uploaded PDFs
-  - Number of extracted text chunks
-- Multi-document queries (2–3 PDFs) take longer due to:
-  - Re-embedding of additional chunks
-  - Increased retrieval and ranking comparisons
 
 ### Design Tradeoff
-This project intentionally prioritizes **retrieval accuracy and evidence faithfulness** over raw speed.
+- This project intentionally prioritizes **retrieval accuracy and evidence faithfulness** over raw speed.
+- Latency is driven by a multi-stage, evidence-grounded design involving multiple LLM calls per query to ensure domain-agnostic claim extraction, validation, and ranking.
 
 ## 🔒 Environment Variables
 
